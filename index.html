@@ -1,0 +1,88 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Code Review</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>The Code Review</h2>
+    </header>
+
+    <main>
+      <h2>Signup for newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+
+      <form action="index.html" method="post">
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="user-name" placeholder="Required">
+
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" name="user-email" placeholder="Required">
+
+          <label for="phone-number">Phone Number</label>
+          <input type="text" id="phone-number" name="user_phone">
+
+          <label for="street-address">Street Address</label>
+          <input type="text" id="street-address" name="user-address">
+
+          <label for="city">City</label>
+          <input type="text" id="city" name="user-city">
+
+          <label for="state">State</label>
+          <select id="state" name="user_state">
+            <option value="Maryland">Maryland</option>
+            <option value="New York">New-York</option>
+            <option value="Georgia">Georgia</option>
+
+          <label for="zip-code">Zip Code</label>
+          <input type="text" id="zip-code" name="user-zip">
+        </fieldset>
+
+
+        <fieldset>
+          <legend>NewsLetter</legend>
+
+          <legend>Select the newsletters you would like to recieve</legend>
+
+          <input type="checkbox" id="html-news" value="html-news" name="newsletter-preference">
+          <label for="html-news">HTML News</label><br>
+
+          <input type="checkbox" id="css-news" value="css-news" name="newsletter-preference">
+          <label for="css-news">CSS News</label><br>
+
+          <input type="checkbox" id="javascript-news" value="javascript-news" name="newsletter-preference">
+          <label for="javascript-news">Javascript News</label>
+
+          <legend>Newsletter format</legend>
+
+          <input type="radio" id="newsletter-html" value="newsletter-html" name="newsletter-format">
+          <label for="newsletter-html">HTML</label><br>
+
+          <input type="radio" id="newsletter-plain" value="newsletter-plain" name="newsletter-format">
+          <label for="newsletter-plain">Plain text</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="other-topics">Other topics you'd like to hear about</label><br>
+          <textarea id="other-topics" name="user-topics"></textarea>
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+
+        <p>Copyright The Code Review</p>
+      </form>
+
+
+    </main>
+  </body>
+
+
+
+
+
+</html>
