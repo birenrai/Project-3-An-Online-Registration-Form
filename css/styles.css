@@ -1,0 +1,36 @@
+
+
+/* Main Header */
+
+.main-header {
+  background: blue;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+}
+
+.main-header h2 {
+  padding-top: 20px;
+}
+
+/* Intro */
+
+
+/* Contact Information */
+.contact-information {
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: none;
+  border-left: none; */
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*Newsletter*/
+.contact-information,
+.newsletter,
+.user-suggestion {
+  border: none;
+}
