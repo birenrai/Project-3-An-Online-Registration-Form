@@ -13,9 +13,9 @@
     </header>
 
     <main>
-      <section>
+      <section class="intro">
       <h2>Signup for newsletter</h2>
-      <p class="intro">Get the latest news on how your code is doing right in your inbox</p>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
       </section>
 
       <form action="index.html" method="post" class="form">
@@ -39,7 +39,7 @@
           <input type="text" id="city" name="user-city">
 
           <label for="state">State</label>
-          <select id="state" name="user_state">
+          <select id="state" name="user_state" placeholder="Choose State">
           	<option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
           	<option value="AZ">Arizona</option>
@@ -118,13 +118,13 @@
           <label for="newsletter-html">HTML</label><br>
 
           <input type="radio" id="newsletter-plain" value="newsletter-plain" name="newsletter-format">
-          <label for="newsletter-plain">Plain text</label>
-        </fieldset>
+          <label for="newsletter-plain">Plain text</label><br>
 
-        <fieldset class="user-suggestion">
           <label for="other-topics">Other topics you'd like to hear about</label><br>
           <textarea id="other-topics" name="user-topics"></textarea>
         </fieldset>
+
+
 
         <button type="submit">Sign Up</button>
 

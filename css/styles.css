@@ -10,27 +10,54 @@
 }
 
 .main-header h2 {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 /* Intro */
-
+.intro {
+  border-bottom: 5px solid black;
+  margin-bottom: 5px;
+  text-align: center;
+}
+/* Form */
+.form {
+  border-top: 2px solid black;
+}
 
 /* Contact Information */
 .contact-information {
-  /* border-top: 2px solid black;
   border-bottom: 2px solid black;
+  border-top: none;
   border-right: none;
-  border-left: none; */
+  border-left: none;
 
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 
 }
 
+#full-name[placeholder="Required"],
+#mail[placeholder="Required"]{
+  text-align: right;
+}
+
 /*Newsletter*/
-.contact-information,
 .newsletter,
 .user-suggestion {
   border: none;
+}
+
+.contact-information input,
+.contact-information select {
+  width: 50%;
+  margin-right: auto;
+}
+
+.contact-information label {
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+
 }
