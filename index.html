@@ -1,7 +1,8 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>The Code Review</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -23,17 +24,17 @@
 
         <div class="flex-ready">
           <label for="full-name">Full Name</label>
-          <input type="text" id="full-name" name="user-name" placeholder="Required">
+          <input type="text" id="full-name" name="user-name" placeholder="Required" required>
         </div>
 
         <div class="flex-ready">
           <label for="mail">Email Address</label>
-          <input type="email" id="mail" name="user-email" placeholder="Required">
+          <input type="email" id="mail" name="user-email" placeholder="Required" required>
         </div>
 
         <div class="flex-ready">
           <label for="phone-number">Phone Number</label>
-          <input type="text" id="phone-number" name="user_phone">
+          <input type="tel" id="phone-number" name="user_phone" placeholder="Required" required>
         </div>
 
         <div class="flex-ready">
@@ -48,7 +49,8 @@
 
         <div class="flex-ready">
           <label for="state">State</label>
-          <select id="state" name="user_state" placeholder="Choose State">
+          <select id="state" name="user_state">
+            <option value="" disabled selected>Choose State</option>
           	<option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
           	<option value="AZ">Arizona</option>
@@ -130,7 +132,7 @@
         <label for="newsletter-html">HTML</label><br>
 
         <input type="radio" id="newsletter-plain" value="newsletter-plain" name="newsletter-format">
-        <label for="newsletter-plain">Plain text</label><br>
+        <label for="newsletter-plain">Plain text</label><br><br>
 
         <label for="other-topics">Other topics you'd like to hear about</label><br>
         <textarea id="other-topics" name="user-topics"></textarea>
@@ -140,11 +142,5 @@
       <p>Copyright The Code Review</p>
     </form>
 
-
   </body>
-
-
-
-
-
 </html>
