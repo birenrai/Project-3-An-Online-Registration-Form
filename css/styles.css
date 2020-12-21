@@ -1,9 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 
+label,
+input,
+select {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 
 /* Main Header */
 
 .main-header {
-  background: blue;
+  background: red;
   width: 100%;
   text-align: center;
   height: 60px;
@@ -15,27 +26,36 @@
 
 /* Intro */
 .intro {
-  border-bottom: 5px solid black;
+  border-bottom: 2px solid black;
   margin-bottom: 5px;
   text-align: center;
 }
 /* Form */
+.intro,
+.form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .form {
   border-top: 2px solid black;
 }
 
-/* Contact Information */
-.contact-information {
-  border-bottom: 2px solid black;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-
+.flex-ready {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-
 }
+
+/* Contact Information */
+.contact-information {
+  bordor-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 20px;
+}
+
+
 
 #full-name[placeholder="Required"],
 #mail[placeholder="Required"]{
@@ -43,21 +63,31 @@
 }
 
 /*Newsletter*/
-.newsletter,
-.user-suggestion {
+.newsletter{
   border: none;
 }
 
-.contact-information input,
-.contact-information select {
-  width: 50%;
-  margin-right: auto;
+button,
+#other-topics {
+  width: 100%;
 }
 
-.contact-information label {
-  margin-right: auto;
+#other-topics {
+  height: 100px;
 }
-
 @media (min-width: 768px) {
+  .flex-ready {
+    flex-direction: row;
+  }
+
+  .flex-ready input,
+  .flex-ready select {
+    margin-left: auto;
+    width: 85%;
+  }
+  .intro,
+  .form {
+    width: 760px;
+  }
 
 }
